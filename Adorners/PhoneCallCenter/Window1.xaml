@@ -1,0 +1,13 @@
+﻿<Window x:Class="PhoneCallCenter.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ViewModels="clr-namespace:PhoneCallCenter.ViewModels"
+    Title="Window1">
+    <Grid>
+        
+        <ItemsControl>
+            <ViewModels:CallCenterModel></ViewModels:CallCenterModel>
+        </ItemsControl>
+        
+    </Grid>
+</Window>

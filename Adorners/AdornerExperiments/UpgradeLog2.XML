@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AdornerExperiments">
+</Property><Property Name="Solution File" Value="S:\Laptop\Projects\AdornerExperiments\AdornerExperiments.sln">
+</Property><Property Name="User Options File" Value="S:\Laptop\Projects\AdornerExperiments\AdornerExperiments.suo">
+</Property><Property Name="Date" Value="Monday, November 02, 2009">
+</Property><Property Name="Time" Value="19:23 PM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="AdornerExperiments.sln" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments.sln">
+</Event><Event ErrorLevel="0" Project="" Source="AdornerExperiments.suo" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments.suo">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\AdornerExperiments.csproj" Description="Project file successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\AdornerExperiments.csproj">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\App.xaml.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\Window1.xaml.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\Window1.xaml.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\Brushs.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\Brushs.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\EchelonPoint.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\EchelonPoint.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\OriginElement.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\OriginElement.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\Pens.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\Pens.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\EchelonPointToPointConverter.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\EchelonPointToPointConverter.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\Primitives.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\Primitives.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\Properties\AssemblyInfo.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\Properties\Resources.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\Properties\Resources.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\Properties\Settings.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\Properties\Settings.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\Wall.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\Wall.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\WallAdorner.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\WallAdorner.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\WallElement.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\WallElement.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\WallElementDetails.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\WallElementDetails.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\WallDetails.cs" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\WallDetails.cs">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\Properties\Settings.settings" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\Properties\Resources.resx" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\App.xaml" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\App.xaml">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\Window1.xaml" Description="File successfully backed up as S:\Laptop\Projects\AdornerExperiments\Backup1\AdornerExperiments\Window1.xaml">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\AdornerExperiments.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AdornerExperiments" Source="AdornerExperiments\AdornerExperiments.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="AdornerExperiments.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="AdornerExperiments.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AdornerExperiments" Source="AdornerExperiments\AdornerExperiments.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

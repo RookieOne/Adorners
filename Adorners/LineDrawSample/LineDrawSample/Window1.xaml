@@ -1,0 +1,18 @@
+﻿<Window x:Class="LineDrawSample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="LineDrawSample" Height="600" Width="600"
+    >
+    <Grid>
+		<Canvas Name="canvasMain" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+			Width="{Binding ElementName=this, Path=ActualWidth}"
+			Height="{Binding ElementName=this, Path=ActualHeight}"
+			Background="AliceBlue" 
+			MouseLeftButtonDown="Canvas_OnLeftMouseDown" MouseMove="Canvas_OnMouseMove" LayoutUpdated="CanvasRefresh">
+
+			<Rectangle Name="BrokenZone" Fill="DarkGray"></Rectangle>
+			
+		</Canvas>
+
+	</Grid>
+</Window>

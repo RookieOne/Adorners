@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="LineDrawSample">
+</Property><Property Name="Solution File" Value="O:\laptop\LineDrawSample\LineDrawSample.sln">
+</Property><Property Name="User Options File" Value="O:\laptop\LineDrawSample\LineDrawSample.suo">
+</Property><Property Name="Date" Value="Monday, November 02, 2009">
+</Property><Property Name="Time" Value="19:19 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="LineDrawSample.sln" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample.sln">
+</Event><Event ErrorLevel="0" Project="" Source="LineDrawSample.suo" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample.suo">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\LineDrawSample.csproj" Description="Project file successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\LineDrawSample.csproj">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\App.xaml.cs" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\Window1.xaml.cs" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\Window1.xaml.cs">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\MeasurementAdorner.cs" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\MeasurementAdorner.cs">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\ProjectedLine.cs" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\ProjectedLine.cs">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\Properties\AssemblyInfo.cs" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\Properties\Resources.cs" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\Properties\Resources.cs">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\Properties\Settings.cs" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\Properties\Settings.cs">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\Properties\Settings.settings" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\Properties\Resources.resx" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\App.xaml" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\App.xaml">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\Window1.xaml" Description="File successfully backed up as O:\laptop\LineDrawSample\Backup\LineDrawSample\Window1.xaml">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\LineDrawSample.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LineDrawSample" Source="LineDrawSample\LineDrawSample.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="LineDrawSample.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="LineDrawSample.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LineDrawSample" Source="LineDrawSample\LineDrawSample.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

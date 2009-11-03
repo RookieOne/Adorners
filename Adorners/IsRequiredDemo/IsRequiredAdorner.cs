@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Media;
+using System.Windows.Shapes;
 
 namespace IsRequiredDemo
 {
@@ -12,14 +12,10 @@ namespace IsRequiredDemo
         {
             VisualChildren = new VisualCollection(this);
 
-            Control = new Control();
-            VisualChildren.Add(Control);
-
-            Style style = FindResource("IsRequiredAdornerStyle") as Style;
-
-            if (style != null)
-                Control.Style = style;
+            CreatePath();
         }
+
+        Path _path;
 
         VisualCollection VisualChildren { get; set; }
 
@@ -28,7 +24,15 @@ namespace IsRequiredDemo
             get { return VisualChildren.Count; }
         }
 
-        Control Control { get; set; }
+        void CreatePath()
+        {
+            _path = new Path();
+            _path.Fill = Brushes.Red;
+            _path.Data = Geometry.Parse("M0,0 L7,0 L7,7 Z");
+            _path.HorizontalAlignment = HorizontalAlignment.Right;
+
+            VisualChildren.Add(_path);
+        }
 
         protected override Visual GetVisualChild(int index)
         {
@@ -37,14 +41,14 @@ namespace IsRequiredDemo
 
         protected override Size MeasureOverride(Size constraint)
         {
-            Control.Measure(constraint);
+            _path.Measure(constraint);
 
             return base.MeasureOverride(constraint);
         }
 
         protected override Size ArrangeOverride(Size finalSize)
         {
-            Control.Arrange(new Rect(finalSize));
+            _path.Arrange(new Rect(finalSize));
 
             return base.ArrangeOverride(finalSize);
         }

@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
+﻿using System.Windows;
 using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace IsRequiredDemo
 {
@@ -22,6 +11,14 @@ namespace IsRequiredDemo
         public Window1()
         {
             InitializeComponent();
-        }
+
+            Loaded += (sender, e) =>
+                          {
+                              var adornerLayer = AdornerLayer.GetAdornerLayer(textBox1);
+                              var adorner = new IsRequiredAdorner(textBox1);
+
+                              adornerLayer.Add(adorner);
+                          };
+        }        
     }
 }

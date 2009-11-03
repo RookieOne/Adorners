@@ -1,0 +1,158 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ViewModels="clr-namespace:PhoneCallCenter.ViewModels"
+    xmlns:Domain="clr-namespace:PhoneCallCenter.Domain"
+    xmlns:Infrastructure="clr-namespace:PhoneCallCenter.Infrastructure">
+
+    <Storyboard x:Key="DropEnterStoryboard">
+        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" 
+                                       Storyboard.TargetProperty="(Control.LayoutTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+            <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" 
+                                  Value="1.3"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" 
+                                       Storyboard.TargetProperty="(Control.LayoutTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+            <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" 
+                                  Value="1.3"/>
+        </DoubleAnimationUsingKeyFrames>
+    </Storyboard>
+    
+    <Storyboard x:Key="DropExitStoryboard">
+        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" 
+                                       Storyboard.TargetProperty="(Control.LayoutTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+            <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" 
+                                  Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" 
+                                       Storyboard.TargetProperty="(Control.LayoutTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+            <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" 
+                                  Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+    </Storyboard>
+    
+    <Style x:Key="DropStyle">
+        <Setter Property="Control.LayoutTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="DragDrop.DragOver">
+                <BeginStoryboard Storyboard="{StaticResource DropEnterStoryboard}" />
+            </EventTrigger>
+            <EventTrigger RoutedEvent="DragDrop.DragLeave">
+                <BeginStoryboard Storyboard="{StaticResource DropExitStoryboard}" />
+            </EventTrigger>
+            <EventTrigger RoutedEvent="DragDrop.Drop">
+                <BeginStoryboard Storyboard="{StaticResource DropExitStoryboard}" />
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+        
+    <DataTemplate x:Key="PartyDragTemplate" DataType="{x:Type Domain:Party}">
+        <Border BorderBrush="Black"
+                BorderThickness="1"
+                CornerRadius="2">
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="30" 
+                       Height="30" 
+                       Fill="Red" />
+                <TextBlock Text="{Binding Name}"
+                           FontSize="18"
+                           Margin="20,0,0,0"/>
+            </StackPanel>
+        </Border>
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type Domain:Party}">
+        <StackPanel Infrastructure:DragBehavior.DragData="{Binding }"
+                    Infrastructure:DragBehavior.DragVisualTemplate="{StaticResource PartyDragTemplate}">
+            <TextBlock Text="{Binding Name}" />
+        </StackPanel>
+    </DataTemplate>
+    
+    
+    
+    <DataTemplate DataType="{x:Type Domain:PhoneLine}">
+        <StackPanel Style="{StaticResource DropStyle}"
+                    Orientation="Horizontal"
+                    Infrastructure:DragBehavior.DragData="{Binding }"
+                    Infrastructure:DropBehavior.DropAction="SetParty"
+                    Infrastructure:DropBehavior.DropInstance="{Binding }"
+                    Infrastructure:DropBehavior.DropDataType="{x:Type Domain:Party}">
+            
+            <TextBlock Text="Phone Line" />
+            <TextBlock Text="{Binding Id}" />
+            <TextBlock Text="{Binding Party.Name}" />
+            
+        </StackPanel>
+    </DataTemplate>
+    
+    <Style x:Key="employeePhoneBorderStyle" 
+           TargetType="Border" 
+           BasedOn="{StaticResource DropStyle}">
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderBrush" Value="Black" />
+        <Setter Property="CornerRadius" Value="2" />
+        <Setter Property="Background" Value="#00000000" />
+        <Setter Property="Margin" Value="5" />
+    </Style>
+
+    <Style x:Key="employeePhoneTextStyle" TargetType="TextBlock">
+        <Setter Property="Margin" Value="20" />
+    </Style>
+
+    <DataTemplate DataType="{x:Type Domain:Employee}">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding Name}"
+                       />
+            <Border Style="{StaticResource employeePhoneBorderStyle}"
+                    Infrastructure:DropBehavior.DropAction="Transfer"
+                    Infrastructure:DropBehavior.DropInstance="{Binding }"
+                    Infrastructure:DropBehavior.DropDataType="{x:Type Domain:PhoneLine}">
+                <TextBlock Style="{StaticResource employeePhoneTextStyle}"
+                           Text="Transfer" />
+            </Border>
+
+            <Border Style="{StaticResource employeePhoneBorderStyle}"
+                    Infrastructure:DropBehavior.DropAction="SendToVoiceMail"
+                    Infrastructure:DropBehavior.DropInstance="{Binding }"
+                    Infrastructure:DropBehavior.DropDataType="{x:Type Domain:PhoneLine}">
+                <TextBlock Style="{StaticResource employeePhoneTextStyle}"
+                           Text="Send to Voice Mail" />
+            </Border>
+            
+        </StackPanel>
+    </DataTemplate>
+
+
+    <DataTemplate DataType="{x:Type ViewModels:CallCenterModel}">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            
+            <ListBox Grid.Column="0"                                       
+                     ItemsSource="{Binding Parties}" />
+            
+            <ListBox Grid.Column="1"                                      
+                     ItemsSource="{Binding PhoneLines}" />
+            
+            <ListBox Grid.Column="2"                       
+                     ItemsSource="{Binding Employees}" />
+            
+        </Grid>
+        
+        
+    </DataTemplate>
+    
+    
+</ResourceDictionary>
